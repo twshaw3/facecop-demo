@@ -13,6 +13,10 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
+app.get('/upload', function(request, response) {
+  response.render('pages/upload');
+});
+
 // using SendGrid's v3 Node.js Library
 // https://github.com/sendgrid/sendgrid-nodejs
 var helper = require('sendgrid').mail;
